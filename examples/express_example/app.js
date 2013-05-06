@@ -7,25 +7,10 @@ var express = require('express')
   , http = require('http')
   , path = require('path')
   , cons = require('../modules/consolidate')
-  , hot = require("../../hot");
+  , hot = require("hot");
 
 var app = express();
 /* hot custom */
-var cache = {};
-//override dot by hot
-cons.hot.render = function(str, it, fn){
-    var engine = hot;
-    try {
-    var settings, def = {};
-	if (!cache[str])
-	    cache[str] = {tmpl: engine.template(str, settings, def), def: def};
-	var c = cache[str];
-	it.def = c.def;
-	it.helpers = engine.helpers;
-	fn(null, c.tmpl(it));
-    }
-    catch (err){ fn(err); }
-};
 hot.templateSettings.strip = false;
 hot.helpers.sum = function(a){
     a = a||[];
