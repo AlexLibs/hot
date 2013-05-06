@@ -6,8 +6,8 @@ var express = require('express')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path')
-  , cons = require('../modules/consolidate')
-  , hot = require("hot");
+  , hot = require("hot")
+  , cons = require('../modules/consolidate');
 
 var app = express();
 /* hot custom */
