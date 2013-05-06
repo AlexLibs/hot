@@ -1,0 +1,14 @@
+{
+  "name": "hot",
+  "description": "node.js template engine",
+  "keywords": [
+    "template",
+    "templating"
+  ],
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha":"*"
+  }
+}
