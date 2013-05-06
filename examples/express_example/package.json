@@ -2,7 +2,6 @@
   "name": "hot-with-express-example",
   "version": "0.0.1",
   "dependencies": {
-    "express": "*",
-    "hot": "*"
+    "express": "*"
   }
 }
