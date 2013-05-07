@@ -1,7 +1,0 @@
-{
-  "name": "hot-examples",
-  "version": "0.0.2",
-  "dependencies": {
-    "hot": "*"
-  }
-}
