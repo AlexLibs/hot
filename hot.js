@@ -28,7 +28,7 @@
 	viewsDir: undefined, //str, for tests
 	helpers: {},  //{} of fn, user defined helpers
     };
-    var mainDir = require('path').dirname(require.main.filename),
+    var mainDir = require.main ? require('path').dirname(require.main.filename) : '',
 	fs = require('fs');
     if (typeof module !== 'undefined' && module.exports) {
 	module.exports = hot;
