@@ -42,7 +42,7 @@ function zhot_test() {
         o: 'it'
     }, "after,after");
     it("helper", function() {
-        var escape = escape || require('./examples/modules/escape.js');
+        var escape = escape || require('./modules/escape.js');
         var it = {};
         var t = function(str, arg, expected) {
             hot.helpers.mailto = function(m) {
